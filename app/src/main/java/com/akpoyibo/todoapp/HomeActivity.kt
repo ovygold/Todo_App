@@ -13,7 +13,9 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         userDisplay = findViewById(R.id.usernameDisplay)
 
-        userDisplay.text= "Hello human beings"
+        userDisplay.text=intent.getStringExtra("username")
+
+
     }
 
 }
